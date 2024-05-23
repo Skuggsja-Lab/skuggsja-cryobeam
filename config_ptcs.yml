@@ -1,0 +1,4 @@
+# Configuration file containing the paths to cryocooler capacity datasets for various ptc models
+
+cryomec_ptc420:
+  path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\ptc\cryomech_ptc420_pw.csv

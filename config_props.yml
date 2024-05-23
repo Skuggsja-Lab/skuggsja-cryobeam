@@ -1,0 +1,513 @@
+# Configuration file containing various physical properties for compounds constituting alloys used in the thermal properties calculator
+# Useful references: https://periodictable.com/Elements/022/data.html, https://www.knowledgedoor.com/2/elements_handbook/debye_temperature.html
+# Mass % are the average values here. Can be modified if needs be. Maximal values are indicated in comments.
+
+# Materials and associated properties
+carbon: &carbon
+  # Name
+  name: "Carbon"
+
+  # Density [kg.m^-3]
+  rho: 2200.
+
+  # Young Modulus [Pa]
+  Ey: 1220.0e+9
+
+aluminium: &aluminium
+  # Name
+  name: "Aluminium"
+
+  # Density [kg.m^-3]
+  rho: 2700.
+
+  # Debye Temperature [K]
+  thetaD: 394.
+
+  # Young Modulus [Pa]
+  Ey: 70.0e+9
+
+  # Melting Temperature [K]
+  Tm: 933.
+
+  # Valence level [na]
+  z: 3.
+
+  # Atomic radius [m]
+  r: 118.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 3.04e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 26.982e-3
+
+magnesium: &magnesium
+  # Name
+  name: "Magnesium"
+
+  # Density [kg.m^-3]
+  rho: 1738.
+
+  # Debye Temperature [K]
+  thetaD: 318.
+
+  # Young Modulus [Pa]
+  Ey: 42.0e+9
+
+  # Melting Temperature [K]
+  Tm: 923.
+
+  # Valence level [na]
+  z: 2.
+
+  # Atomic radius [m]
+  r: 173.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 3.05e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 24.305e-3
+
+silicium: &silicium
+  # Name
+  name: "Silicium"
+
+  # Density [kg.m^-3]
+  rho: 2329.
+
+  # Debye Temperature [K]
+  thetaD: 625.
+
+  # Young Modulus [Pa]
+  Ey: 168.9e+9
+
+  # Melting Temperature [K]
+  Tm: 1683.
+
+  # Valence level [na]
+  z: 4.
+
+  # Atomic radius [m]
+  r: 210.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 5.843e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 28.086e-3
+
+copper: &copper
+  # Name
+  name: "Copper"
+
+  # Density [kg.m^-3]
+  rho: 8960.
+
+  # Debye Temperature [K]
+  thetaD: 343.
+
+  # Young Modulus [Pa]
+  Ey: 130.0e+9
+
+  # Melting Temperature [K]
+  Tm: 1358.
+
+  # Valence level [na]
+  z: 1.2
+
+  # Atomic radius [m]
+  r: 140.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 2.260e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 63.546e-3
+
+  # Heat conductivity
+  k_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\kCu_init.csv
+
+iron: &iron
+  # Name
+  name: "Iron"
+
+  # Density [kg.m^-3]
+  rho: 7874.
+
+  # Debye Temperature [K]
+  thetaD: 470.
+
+  # Young Modulus [Pa]
+  Ey: 204.0e+9
+
+  # Melting Temperature [K]
+  Tm: 1811.
+
+  # Valence level [na]
+  z: 3. # Either 2 or 3, depends on phase formation with other compounds. Often 3 for Al alloys.
+
+  # Atomic radius [m]
+  r: 126.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 5.120e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 55.845e-3
+
+chromium: &chromium
+  # Name
+  name: "Chromium"
+
+  # Density [kg.m^-3]
+  rho: 7150.
+
+  # Debye Temperature [K]
+  thetaD: 424.
+
+  # Young Modulus [Pa]
+  Ey: 204.0e+9
+
+  # Melting Temperature [K]
+  Tm: 2180.
+
+  # Valence level [na]
+  z: 3.
+
+  # Atomic radius [m]
+  r: 128.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 5.940e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 51.990e-3
+
+zinc: &zinc
+  # Name
+  name: "Zinc"
+
+  # Density [kg.m^-3]
+  rho: 7140.
+
+  # Debye Temperature [K]
+  thetaD: 327.
+
+  # Young Modulus [Pa]
+  Ey: 108.0e+9
+
+  # Melting Temperature [K]
+  Tm: 693.
+
+  # Valence level [na]
+  z: 2.
+
+  # Atomic radius [m]
+  r: 142.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 3.700e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 65.380e-3
+
+titanium: &titanium
+  # Name
+  name: "Titanium"
+
+  # Density [kg.m^-3]
+  rho: 4507.
+
+  # Debye Temperature [K]
+  thetaD: 380.
+
+  # Young Modulus [Pa]
+  Ey: 116.0e+9
+
+  # Melting Temperature [K]
+  Tm: 1941.
+
+  # Valence level [na]
+  z: 4.
+
+  # Atomic radius [m]
+  r: 176.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 4.140e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 47.867e-3
+
+manganese: &manganese
+  # Name
+  name: "Manganese"
+
+  # Density [kg.m^-3]
+  rho: 7470.
+
+  # Debye Temperature [K]
+  thetaD: 363.
+
+  # Young Modulus [Pa]
+  Ey: 198.0e+9
+
+  # Melting Temperature [K]
+  Tm: 1519.
+
+  # Valence level [na]
+  z: 4.
+
+  # Atomic radius [m]
+  r: 161.0e-12
+
+  # Sound speed [m.s^-1]
+  v: 5.150e+3
+
+  # Molar mass [kg.mol^-1]
+  Mmol: 54.938e-3
+
+# Alloys 
+alloys:
+  CuRRR100:
+    # Name
+    name: "CuRRR100"
+    # Emissivty
+    eps_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu_100.csv
+    # Constituents
+    k_coeffs:
+      a: 2.2154
+      b: -0.47461
+      c: -0.88068
+      d: 0.13871
+      e: 0.29505
+      f: -0.02043
+      g: -0.04831
+      h: 0.001281
+      i: 0.003207
+    c_coeffs:
+      a: -1.91844
+      b: -0.15973
+      c: 8.61013
+      d: -18.996
+      e: 21.9661
+      f: -12.7328
+      g: 3.54322
+      h: -0.3797
+      i: 0.
+    k_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\k_Cu_100.csv
+    c_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu.csv
+  
+  CuRRR300:
+    # Name
+    name: "CuRRR300"
+    # Emissivty
+    eps_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu_300.csv
+    # Constituents
+    k_coeffs:
+      a: 1.357
+      b: 0.3981
+      c: 2.669
+      d: -0.1346
+      e: -0.6683
+      f: 0.01342
+      g: 0.05773
+      h: 0.0002147
+      i: 0. 
+    c_coeffs:
+      a: -1.91844
+      b: -0.15973
+      c: 8.61013
+      d: -18.996
+      e: 21.9661
+      f: -12.7328
+      g: 3.54322
+      h: -0.3797
+      i: 0.
+    k_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\k_Cu_300.csv
+    c_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu.csv
+
+  CuRRR500:
+    # Name
+    name: "CuRRR500"
+    # Emissivty
+    eps_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu_500.csv
+    # Constituents
+    k_coeffs:
+      a: 2.8075
+      b: -0.54074
+      c: -1.2777
+      d: 0.15362
+      e: 0.36444
+      f: -0.02105
+      g: -0.051727
+      h: 0.0012226
+      i: 0.0030964
+    c_coeffs:
+      a: -1.91844
+      b: -0.15973
+      c: 8.61013
+      d: -18.996
+      e: 21.9661
+      f: -12.7328
+      g: 3.54322
+      h: -0.3797
+      i: 0.
+    k_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\k_Cu_500.csv
+    c_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\Copper\eps_Cu.csv
+  
+  al6061:
+    # Name
+    name: "Al6061"
+    # Emissivty
+    eps_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\AlAlloys\eps_Al_fromsources.csv
+    # Constituents
+    compounds:
+      aluminium: *aluminium
+      magnesium: *magnesium
+      silicium: *silicium
+      iron: *iron
+      copper: *copper
+      chromium: *chromium
+      zinc: *zinc
+      titanium: *titanium
+      manganese: *manganese
+    mass_pct:
+      # x_Al = 1. - SUM(x_i, i = compounds index)
+      x_Mg: 1.00e-2 # min = 0.80e-2, max = 1.20e-2
+      x_Si: 0.60e-2 # min = 0.40e-2, max = 0.80e-2
+      x_Fe: 0.35e-2 # min = 0.00e-2, max = 0.70e-2
+      x_Cu: 0.33e-2 # min = 0.15e-2, max = 0.40e-2
+      x_Cr: 0.20e-2 # min = 0.04e-2, max = 0.35e-2
+      x_Zn: 0.13e-2 # min = 0.00e-2, max = 0.25e-2
+      x_Ti: 0.08e-2 # min = 0.00e-2, max = 0.15e-2
+      x_Mn: 0.08e-2 # min = 0.00e-2, max = 0.15e-2
+    k_coeffs:
+      a: 0.07918
+      b: 1.0957
+      c: -0.07277
+      d: 0.08084
+      e: 0.02803
+      f: -0.09464
+      g: 0.04179
+      h: -0.00571
+      i: 0. 
+    k_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\kAl6061.csv
+    c_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\CAl6061.csv
+    T_melt: 895. # averaged from online sources
+  
+
+  al6063:
+    # Name
+    name: "Al6063"
+    # Constituents
+    compounds:
+      aluminium: *aluminium
+      magnesium: *magnesium
+      silicium: *silicium
+      iron: *iron
+      copper: *copper
+      chromium: *chromium
+      zinc: *zinc
+      titanium: *titanium
+      manganese: *manganese
+    mass_pct:
+      # x_Al = 1. - SUM(x_i, i = compounds index)
+      x_Mg: 0.68e-2 # min = 0.45e-2, max = 0.90e-2
+      x_Si: 0.40e-2 # min = 0.20e-2, max = 0.60e-2
+      x_Fe: 0.20e-2 # min = 0.00e-2, max = 0.35e-2
+      x_Cu: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+      x_Cr: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+      x_Zn: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+      x_Ti: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+      x_Mn: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+    k_coeffs:
+      a: 22.401433
+      b: -141.13433
+      c: 394.95461
+      d: -601.15377
+      e: 547.83202
+      f: -305.99691
+      g: 102.38656
+      h: -18.810237
+      i: 1.4576882
+    k_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\kAl6063.csv
+    c_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\CAl6063.csv
+    T_melt: 908. # averaged from online sources
+
+  al1100:
+    # Name
+    name: "Al1100"
+    # Constituents
+    compounds:
+      aluminium: *aluminium
+      silicium: *silicium
+      iron: *iron
+      copper: *copper
+      zinc: *zinc
+      manganese: *manganese
+    mass_pct:
+      # x_Al = 1. - SUM(x_i, i = compounds index)
+      x_Si: 0.50e-2 # min = 0.00e-2, max = 0.95e-2
+      x_Fe: 0.50e-2 # min = 0.00e-2, max = 0.95e-2
+      x_Cu: 0.10e-2 # min = 0.05e-2, max = 0.20e-2
+      x_Zn: 0.05e-2 # min = 0.00e-2, max = 0.10e-2
+      x_Mn: 0.03e-2 # min = 0.00e-2, max = 0.05e-2
+    k_coeffs:
+      a: 23.39172
+      b: -148.5733
+      c: 422.1917
+      d: -653.6664
+      e: 607.0402
+      f: -346.152
+      g: 118.4276
+      h: -22.2781
+      i: 1.770187 
+    k_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\kAl1100.csv
+    c_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\CAl1100.csv
+    T_melt: 923. # averaged from online sources# Configuration file containing various physical properties for compounds constituting alloys used in the thermal properties calculator
+
+# Other materials 
+others:
+  g10:
+    # Name
+    name: "G10"
+    k_coeffs:
+      a: -4.1236
+      b: 13.788
+      c: -26.068
+      d: 26.272
+      e: -14.663
+      f: 4.4954
+      g: -0.6905
+      h: 0.0397
+      i: 0.
+    k_warp_coeffs:
+      a: -2.64827
+      b: 8.80228
+      c: -24.8998
+      d: 41.1625
+      e: -39.8754
+      f: 23.1778
+      g: -7.95635
+      h: 1.48806
+      i: -0.11701
+    c_coeffs:
+      a: -2.4083
+      b: 7.6006
+      c: -8.2982
+      d: 7.3301
+      e: -4.2386
+      f: 1.4294
+      g: -0.24396
+      h: 0.015236
+      i: 0. 
+    k_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\kG10.csv
+    c_path: D:\OneDrive - Menntaský\comsol\cmbeam_16052023\CG10.csv
+    emisv: 0.9 # om: https://link.springer.com/article/10.1007/s10765-019-2498-0
+  mli:
+    # Name
+    name: "mli"
+    # Thermal Conductivity
+    kappa_path: D:\OneDrive - Menntaský\hi_workspace\cmbeam\cryostat\CryoBeam\mli\MLI_kappa.csv
