@@ -18,8 +18,8 @@ The overall design geometry is driven by the following parameters:
 For instance, changing the OT length in the equation manager will automatically update the 4K, 40K and 300K lengths as well as re-adjust the DR and PTC connections.
 
 ## Mechanical analysis
-Solidowrks can run FEM mechanical analysis to check the stress and the main accoustic resonnances of the system under study.  
-Parameters may be used as long as they do not modify the number of fixtures and connections establmished for such process.  
+Solidowrks can run FEM mechanical analysis to check the stress and the main accoustic resonnances of the system under study.
+Parameters may be used as long as they do not modify the number of fixtures and connections establmished for such process.
 Otherwise, the user will need to go through their definition again before trying to run a simulation.  
 Regardless, it is highly recommended to work on a separate set of parts and assemblies to conduct such analysis so as to ensure the baseline design is preserved for the thermal analysis.  
 An example is provided here: link?
