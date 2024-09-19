@@ -6,7 +6,7 @@ More information can be found in the ralated publication:
 - Thomas J. L. J. Gascard, Yi Wang, Jon E. Gudmundsson, Eve M. Vavagiakis, Cody J. Duell, Zachary B. Huber, Lawrence T. Lin, Michael D. Niemack, and Rodrigo G. Freundt "Thermal and mechanical study of a parametrised cryostat model for optical characterisation of upcoming CMB experiments", Proc. SPIE 13102, Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XII, 131022O (16 August 2024); https://doi.org/10.1117/12.3019995
 
 ## CAD Model
-The fully parametrised CAD model, built in Solidworks 2022 SP5.0, is available here: ?dropbox link?  
+The fully parametrised CAD model, built in Solidworks 2022 SP5.0, is available [here](https://www.dropbox.com/scl/fo/h18vc017o2419hdnloc0h/AHrIsl6PEw-ja6f75JGTkvk?rlkey=ck93zx9ar5skr54sd0vqw96nw&st=sw0y755q&dl=0):  
 Parameters are listed under the "equation" section of the Feature Manager Design tree.  
 The overall design geometry is driven by the following parameters:
 - the optics tube (OT) length,
