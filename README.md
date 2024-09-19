@@ -27,6 +27,6 @@ An example is provided here: link?
 ## Thermal analysis
 The thermal analysis is conducted in COMSOL Multiphysics 6.1 (Build 357).  
 The thermal model for CryoSim and a quick start guide on how to set it up are available in the [comsol](/comsol) folder.  
-This analysis is heavily dependant on a database, available under the "material_db" folder, that provides the various propoerties for the materials involved and the pulse tube colling power curves, in CSV files.  
-The "thermal_prop_calc" provides examples on how the database is built using the "thermal_props" Python module (Python 3.11.3).  
+This analysis is heavily dependant on a database, available under the ["material db"](/material_db/db_files) folder, that provides the various propoerties for the materials involved and the pulse tube colling power curves, in CSV files.  
+A [Jupyter notebook](/material_db/thermal_prop_cal.ipynb) provides examples on how the database is built using the [thermal_props](/material_db/thermal_props.py) Python module (Python 3.11.3).  
 
