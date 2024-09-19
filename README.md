@@ -20,4 +20,6 @@ For instance, changing the OT length in the equation manager will automatically 
 ## Thermal analysis
 The thermal analysis is conducted in COMSOL Multiphysics 6.1 (Build 357).  
 The thermal model for CryoSim and a quick start guide on how to set it up are available in the comsol folder (link?).  
-This analysis is heavily dependant on a database that provides the various propoerties for the materials involved and the pulse tube colling power curves.  
+This analysis is heavily dependant on a database, available under the "material_db" folder, that provides the various propoerties for the materials involved and the pulse tube colling power curves, in CSV files.  
+The "thermal_prop_calc" provides examples on how the database is built using the "thermal_props" Python module (Python 3.11.3).  
+
