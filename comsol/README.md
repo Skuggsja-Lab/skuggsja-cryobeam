@@ -4,3 +4,5 @@ For user who have experience with COMSOL, the CAD model is available [here](http
 In COMSOL, under the geometry branch, the Solidworks Livelink documlent folder will need to be changed accordingly to where the model was dowloaded. Adjustements in the geometry selections may also be needed.  
 Once the geometry is properly defined, another important aspect is to properly setup the study you want to run. Select the first step for the concerned study and run a calculation of the initial values. Once this is done, the full solver setup becomes available.  
 Maker sure the solver uses a fully coupled solve, and that the latter uses a highly non-linear Newtonian algorythm with 200 or so iterations for the termination criteria.
+For the time domain solvers, under the timùe stepping section, make sure the generalised alpha method is selected, the predictor is set to linear and the frequency amplification is set near 0.75.  
+For the stationary study, in the heat transfer physics, add initial values of 40K and 4K for the corresponding domains. This will help the solver to converge faster and in an accurate manner. 
