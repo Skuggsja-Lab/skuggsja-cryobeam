@@ -15,6 +15,7 @@ The overall design geometry is driven by the following parameters:
 - the spacing between shells,
 - the position of the PTC,
 - the position of the DR.  
+
 For instance, changing the OT length in the equation manager will automatically update the 4K, 40K and 300K lengths as well as re-adjust the DR and PTC connections.
 
 ## Mechanical analysis
